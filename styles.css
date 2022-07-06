@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+
+/* タブメニュー */
+.tab-menu {
+	display: flex;
+	justify-content: center;
+	margin: 0 -5px;
+}
+
+.tab-menu__item {
+	box-sizing: border-box;
+	padding: 0 5px;
+	list-style: none;
+}
+
+
+.tabListStyle {
+	/* label */
+	text-align: center;
+	cursor: pointer;
+	display: block;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-bottom: 0;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+}
+
+.tabListStyle.is-active {
+	/* is-activeが付与されたらタブの色を変更させる */
+	background-color: #e9e9e9;
+}
+
+
+/* タブコンテンツ */
+.tab-content {
+	border: 1px solid #ccc;
+	margin: 0 auto;
+	width: 70%;
+}
+/* タブ内のコンテンツのスタイル */
+.tab-content__item {
+	color: #fff;
+	padding: 20px;
+	display: none;
+	
+}
+/* is-activeが付与された時のスタイル */
+.tab-content__item.is-active {
+	display: block;
+	animation: fade 1s ease;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+
+.main_title{
+	margin: 0;
+	padding: 0;
+	font-size: 25px;
+	text-align: center;
+}
+
+.sub_title{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	text-align: center;
+	color: gray;
+}

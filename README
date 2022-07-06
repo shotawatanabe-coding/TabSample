@@ -1,0 +1,10 @@
+
+1
+はじめにタブメニュークラス’.js-tab-trigger’を持つ要素をdocument.querySelectorAllで取得し、配列としてtabTriggersに格納します。
+同様にタブコンテンツクラス’.js-tab-target’を持つ要素をdocument.querySelectorAllで取得し、配列としてtabTargetsに格納します。
+
+トリガーの数だけfor分でループ処理を行い、値を取り出します。
+
+トリガー要素の’.js-tab-trigger’がクリックされたら、クリックされた要素を特定するために変数currentMenuに格納、その変数から指定のターゲット要素をdata-id属性から取得して、変数currentContentとして保持します。
+
+タブメニュー全てのアクティブクラスの’.is-active’をトリガーの数だけfor分でループさせて削除、クリックされた要素（currentMenu）にのみ’.is-active’を付加します。

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Tab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <p class="main_title">Skills</p>
+  <p class="sub_title">今までの制作・開発実績</p>
+  <div >
+    <ul class="tab-menu" >
+      <!-- .tab-menu -->
+
+      <li class="tab-menu__item">
+        <span class="tabListStyle js-tab-trigger is-active" data-id="tab01">
+          WEB制作
+        </span>
+      </li>
+      <li class="tab-menu__item">
+        <span class="tabListStyle js-tab-trigger" data-id="tab02">
+          フロントエンド開発
+        </span>
+      </li>
+      <li class="tab-menu__item">
+        <span class="tabListStyle js-tab-trigger" data-id="tab03">
+          Wordpress構築
+        </span>
+      </li>
+
+    </ul><!-- .tab-menu -->
+
+    <div class="tab-content">
+      <!-- .tab-content -->
+
+      <div class="tab-content__item js-tab-target is-active" id="tab01" style="background-color:#3265ce;">
+        <!-- .tab-content__item -->
+        <p>タブ1のコンテンツが入ります。</p>
+      </div><!-- .tab-content__item -->
+
+      <div class="tab-content__item js-tab-target" id="tab02" style="background-color:#00a0e9;">
+        <!-- .tab-content__item -->
+        <p>タブ2のコンテンツが入ります。</p>
+      </div><!-- .tab-content__item -->
+
+      <div class="tab-content__item js-tab-target" id="tab03" style="background-color:#7abc1c;">
+        <!-- .tab-content__item -->
+        <p>タブ3のコンテンツが入ります。</p>
+      </div><!-- .tab-content__item -->
+
+    </div><!-- tab-content -->
+  </div>
+
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
